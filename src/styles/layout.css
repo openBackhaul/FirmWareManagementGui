@@ -1,0 +1,223 @@
+﻿/* Layout styles matching Telefonica _BackupAndRestore standard */
+.dashboard-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* TOP NAV */
+.top-nav {
+  height: 56px;
+  background: #ffffff;
+  border-bottom: 2px solid #0067ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 103, 255, 0.08);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-logo {
+  width: 32px;
+  height: 32px;
+  background: #0067ff;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 4px rgba(0, 103, 255, 0.25);
+}
+
+.app-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0067ff;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+}
+
+.app-subtitle {
+  font-size: 0.72rem;
+  color: #8c9ba5;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.utc-clock-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0f4f9;
+  border: 1px solid #d9e2ec;
+  color: #243b53;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.utc-clock-pill i {
+  color: #0067ff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-btn {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #0067ff;
+  font-size: 1.6rem;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+/* SIDEBAR - Dark Navy #0b2b3a matching _BackupAndRestore */
+.sidebar {
+  background: #0b2b3a;
+  color: #cdd9e5;
+  height: 100%;
+  transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.12);
+  z-index: 50;
+}
+
+.sidebar.expanded {
+  width: 290px;
+}
+
+.sidebar.collapsed {
+  width: 64px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  flex: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #adbac7;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  user-select: none;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+}
+
+.menu-item:hover {
+  background: #133d52;
+  color: #ffffff;
+}
+
+.menu-item.active {
+  background: #0067ff;
+  color: #ffffff;
+  border-left: 3px solid #60a5fa;
+  font-weight: 600;
+}
+
+.menu-item i {
+  font-size: 1.15rem;
+  width: 24px;
+  text-align: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.menu-item .menu-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-badge {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.sidebar-footer {
+  padding: 10px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sidebar-toggle-btn {
+  background: transparent;
+  border: none;
+  color: #8c9ba5;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+
+.sidebar-toggle-btn:hover {
+  color: #ffffff;
+}
+
+/* CONTENT AREA */
+.content-area {
+  flex: 1;
+  background: #f6f8fb;
+  overflow-y: auto;
+  padding: 1.25rem 1.5rem;
+}
+
+

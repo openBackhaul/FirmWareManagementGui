@@ -1,0 +1,45 @@
+﻿/* Compact UI sizing matching Telefonica enterprise standard */
+html {
+  font-size: 14.5px;
+}
+
+body {
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+h1 { font-size: 1.75rem !important; font-weight: 600; margin-bottom: 0.75rem; }
+h2 { font-size: 1.5rem !important; font-weight: 600; margin-bottom: 0.65rem; }
+h3 { font-size: 1.25rem !important; font-weight: 600; margin-bottom: 0.55rem; }
+h4 { font-size: 1.1rem !important; font-weight: 600; margin-bottom: 0.5rem; }
+h5 { font-size: 0.98rem !important; font-weight: 600; margin-bottom: 0.45rem; }
+h6 { font-size: 0.9rem !important; font-weight: 600; margin-bottom: 0.4rem; }
+
+p { margin-bottom: 0.5rem; font-size: 0.93rem; }
+small, .small { font-size: 0.85rem !important; }
+
+.top-nav {
+  height: 56px !important;
+  padding: 0 1.25rem !important;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.45rem 0.65rem !important;
+  font-size: 0.88rem;
+  vertical-align: middle;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  font-size: 0.78rem;
+}
+
+.card {
+  border-radius: 6px;
+  border: 1px solid #e6e9ee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+

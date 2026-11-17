@@ -1,0 +1,81 @@
+﻿/* Telefonica Brand Colors Theme */
+:root {
+  /* Primary Telefonica Colors - Exact Match */
+  --telefonica-blue: #0067FF;
+  --telefonica-blue-dark: #0052CC;
+  --telefonica-blue-light: #4D94FF;
+  --telefonica-blue-lighter: #E6F0FF;
+  --telefonica-white: #FFFFFF;
+  
+  /* Supporting Colors */
+  --telefonica-gray-dark: #2C2C2C;
+  --telefonica-gray-medium: #666666;
+  --telefonica-gray-light: #E0E0E0;
+  --telefonica-gray-lighter: #F8F9FA;
+  
+  /* Sidebar Navy */
+  --sidebar-navy: #0b2b3a;
+  --sidebar-navy-hover: #133d52;
+  --sidebar-active-blue: #0067FF;
+  
+  /* Status Colors */
+  --telefonica-success: #198754;
+  --telefonica-warning: #ffc107;
+  --telefonica-danger: #dc3545;
+  --telefonica-info: #0dcaf0;
+  
+  /* UI Element Colors */
+  --nav-bg: var(--telefonica-white);
+  --nav-border: var(--telefonica-blue);
+  --sidebar-bg: var(--sidebar-navy);
+  --content-bg: #f6f8fb;
+  --card-bg: var(--telefonica-white);
+  --card-border: #e6e9ee;
+  --text-primary: var(--telefonica-gray-dark);
+  --text-secondary: var(--telefonica-gray-medium);
+}
+
+/* Global Overrides */
+body {
+  color: var(--text-primary);
+  background-color: var(--content-bg);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bootstrap Primary Color Override */
+.btn-primary {
+  background-color: #0067FF !important;
+  border-color: #0067FF !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #0052CC !important;
+  border-color: #0052CC !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  color: #0067FF !important;
+  border-color: #0067FF !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0067FF !important;
+  border-color: #0067FF !important;
+  color: white !important;
+}
+
+.bg-primary {
+  background-color: #0067FF !important;
+}
+
+.text-primary {
+  color: #0067FF !important;
+}
+
+
